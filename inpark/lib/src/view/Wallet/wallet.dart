@@ -183,7 +183,9 @@ class _walletState extends State<wallet> {
                                 ],
                               ),
                             ),
-                            SizedBox(height: 70,),
+                            SizedBox(
+                              height: 70,
+                            ),
                             Text(
                               'LATEST TRANSACTIONS',
                               style: TextStyle(
@@ -193,11 +195,13 @@ class _walletState extends State<wallet> {
                                 fontWeight: FontWeight.w500,
                                 height: 1.12,
                               ),
-                              textHeightBehavior: TextHeightBehavior(applyHeightToFirstAscent: false),
+                              textHeightBehavior: TextHeightBehavior(
+                                  applyHeightToFirstAscent: false),
                               softWrap: false,
                             ),
-                            SizedBox(height: 30,),
-
+                            SizedBox(
+                              height: 30,
+                            ),
                             FutureBuilder(
                                 future: _walletController.getTransections(),
                                 builder: (context, snapshot) {
@@ -292,4 +296,3 @@ class _walletState extends State<wallet> {
     );
   }
 }
-
